@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kazimasum.qrdemo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_cashier"
+        android:label="Cashier App"
+        android:roundIcon="@mipmap/ic_cashier_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".z_analytics_pasahan"></activity>
+        <activity
+            android:name=".Zoomreject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Zoomorderqueue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RejectOrder2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RejectOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".completeOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".o2_OrderQueue2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".o1_OrderQueue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scannerView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

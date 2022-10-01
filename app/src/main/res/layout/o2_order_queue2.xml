@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2f0d9"
+    android:layout_gravity="center"
+    tools:context=".o2_OrderQueue2"
+    android:paddingHorizontal="15sp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/datalistQLoob"
+        android:layout_width="match_parent"
+        android:layout_height="504dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="3dp"
+        tools:layout_editor_absoluteX="31dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/dateQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:00 PM"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.047"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateQ" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.187"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/dateQ" />
+
+                <TextView
+                    android:id="@+id/txtstat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="status display"
+                    android:textColor="#09A804"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.064"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/boldd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="Order ID: \nName: \nOrd Loc: \nTotal: "
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/otherDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="order Id\nJose \nOrder Location \nP 100"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/boldd"
+                    app:layout_constraintTop_toTopOf="@+id/boldd" />
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="---------------------\nOrder Summary"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/boldd" />
+
+                <TextView
+                    android:id="@+id/textSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="terijaki order"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Payment: "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textSummary" />
+
+                <TextView
+                    android:id="@+id/txtpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="approval"
+                    android:textColor="#09A804"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+                <ImageView
+                    android:id="@+id/imagep"
+                    android:layout_width="match_parent"
+                    android:layout_height="390dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ECECEC"
+                    android:src="@drawable/ic_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnreject"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#FB0000"
+        android:text="Reject order"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datalistQLoob" />
+
+    <Button
+        android:id="@+id/btnaccept"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#EAD200"
+        android:text="Accept Payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datalistQLoob" />
+
+    <Button
+        android:id="@+id/markAsComp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#4CAF50"
+        android:text="Mark as Complete "
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/btnaccept"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/btnreject"
+        app:layout_constraintTop_toBottomOf="@+id/btnreject" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_cardview"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@+id/markAsComp"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/mensahe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+ />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

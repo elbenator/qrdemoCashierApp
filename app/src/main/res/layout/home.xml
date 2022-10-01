@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderQueueBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFCBA2"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cashier App"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="176dp"
+
+        android:src="@drawable/terijaki"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.037" />
+
+
+    <Button
+        android:id="@+id/scanbtn"
+        android:layout_width="276dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#ed6f00"
+        android:text="Scan QRCode"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/orderQbtn"
+        app:layout_constraintEnd_toEndOf="@+id/orderQbtn"
+        app:layout_constraintStart_toStartOf="@+id/orderQbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/orderQbtn"
+        android:layout_width="276dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#70ad47"
+        android:text="Order Queue"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#5E35B1"
+        android:text="Complete \n Order"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/orderQbtn"
+        app:layout_constraintTop_toBottomOf="@+id/orderQbtn"
+        app:strokeColor="#ed6f00"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_cardview"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scanbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scanbtn"
+        app:layout_constraintTop_toBottomOf="@+id/orderQbtn"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <Button
+        android:id="@+id/Ordreject"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border_cardview"
+        android:backgroundTint="#E53935"
+        android:text="Reject \n Order"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@+id/orderQbtn"
+        app:layout_constraintTop_toBottomOf="@+id/orderQbtn" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
